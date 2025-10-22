@@ -1,70 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Sistema Experto - Grupo F</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .slide {
-            text-align: center;
-            display: none;
-        }
-        .slide.active {
-            display: block;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.5em;
-            margin: 0.3em 0;
-        }
-        button {
-            margin-top: 2em;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            background-color: #0078d7;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Presentación - Sistema Experto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .boton {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .boton:hover {
+      background-color: #0056b3;
+    }
+    .seccion {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <div id="slide1" class="slide active">
-        <h1>Sistema Experto Para Servicio de Red</h1>
-        <p>Profesor: Horacio Bogarín</p>
-        <p>Alumnos: Valeria Villega, Cristian Couto, Diego Estrada</p>
-        <button onclick="nextSlide()">Siguiente</button>
-    </div>
 
-    <div id="slide2" class="slide">
-        <h1>Objetivo del Proyecto</h1>
-        <p>El objetivo de este proyecto es desarrollar un sistema experto interactivo que permita a los usuarios diagnosticar de forma autónoma problemas comunes en sus servicios de red domiciliarios (como internet, Wi-Fi, router, cableado, etc.). Este sistema simula el razonamiento de un técnico especializado, guiando al usuario paso a paso hasta identificar la causa probable del problema y sugerir soluciones concretas..</p>
-        <button onclick="prevSlide()">Anterior</button>
-    </div>
+  <h1>🔧 Sistema Experto para Diagnóstico de Fallas en Redes Domésticas</h1>
 
-    <script>
-        function nextSlide() {
-            document.getElementById('slide1').classList.remove('active');
-            document.getElementById('slide2').classList.add('active');
-        }
+  <a href="#introduccion" class="boton">Introducción</a>
+  <a href="#arquitectura" class="boton">Arquitectura</a>
+  <a href="#casos" class="boton">Casos de Uso</a>
+  <a href="#resultados" class="boton">Resultados</a>
+  <a href="#contacto" class="boton">Contacto</a>
 
-        function prevSlide() {
-            document.getElementById('slide2').classList.remove('active');
-            document.getElementById('slide1').classList.add('active');
-        }
-    </script>
+  <div id="introduccion" class="seccion">
+    <h2>🔍 Introducción</h2>
+    <p>Este sistema experto permite diagnosticar fallas comunes en redes domésticas mediante reglas basadas en síntomas observables.</p>
+  </div>
+
+  <div id="arquitectura" class="seccion">
+    <h2>🧠 Arquitectura</h2>
+    <p>El sistema utiliza una base de hechos, reglas encadenadas y un motor de inferencia para llegar a conclusiones explicables.</p>
+  </div>
+
+  <div id="casos" class="seccion">
+    <h2>📦 Casos de Uso</h2>
+    <ul>
+      <li>Falla de conexión Wi-Fi</li>
+      <li>Problemas con el router</li>
+      <li>Interferencia de señal</li>
+      <li>Configuración incorrecta de IP</li>
+    </ul>
+  </div>
+
+  <div id="resultados" class="seccion">
+    <h2>📊 Resultados</h2>
+    <p>El sistema ha demostrado una alta precisión en la identificación de fallas y ofrece recomendaciones claras para su resolución.</p>
+  </div>
+
+  <div id="contacto" class="seccion">
+    <h2>📬 Contacto</h2>
+    <p><strong>Diego Estrada</strong><br>
+    Supervisor de Testing<br>
+    Río Grande, Tierra del Fuego<br>
+    diego.estrada@email.com</p>
+  </div>
+
 </body>
 </html>
