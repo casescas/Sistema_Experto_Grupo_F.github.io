@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Experto - Grupo F</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .slide {
+            text-align: center;
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 0.3em 0;
+        }
+        button {
+            margin-top: 2em;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide1" class="slide active">
+        <h1>Sistema Experto Para Servicio de Red</h1>
+        <p>Profesor: Horacio Bogarín</p>
+        <p>Alumnos: Valeria Villega, Cristian Couto, Diego Estrada</p>
+        <button onclick="nextSlide()">Siguiente</button>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h1>Objetivo del Proyecto</h1>
+        <p>El objetivo de este proyecto es desarrollar un sistema experto interactivo que permita a los usuarios diagnosticar de forma autónoma problemas comunes en sus servicios de red domiciliarios (como internet, Wi-Fi, router, cableado, etc.). Este sistema simula el razonamiento de un técnico especializado, guiando al usuario paso a paso hasta identificar la causa probable del problema y sugerir soluciones concretas..</p>
+        <button onclick="prevSlide()">Anterior</button>
+    </div>
+
+    <script>
+        function nextSlide() {
+            document.getElementById('slide1').classList.remove('active');
+            document.getElementById('slide2').classList.add('active');
+        }
+
+        function prevSlide() {
+            document.getElementById('slide2').classList.remove('active');
+            document.getElementById('slide1').classList.add('active');
+        }
+    </script>
+</body>
+</html>
