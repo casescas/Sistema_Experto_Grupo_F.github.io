@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Presentación - Sistema Experto</title>
+  <title>logo Presentación - Sistema Experto</title>
+  
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: url('imagenes/D.C.V.png') no-repeat center center fixed;
+      background-size: cover; /* Esto hace que la imagen se ajuste a toda la pantalla */
+      background-color: #058a78;
       text-align: center;
       padding: 40px;
     }
     h1 {
-      color: #333;
+      color: #ffffff;
     }
     .boton {
       display: inline-block;
@@ -32,7 +34,7 @@
     .seccion {
       margin-top: 50px;
       padding: 20px;
-      background-color: white;
+      background-color: rgba(0, 0, 0, 0);
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
@@ -40,23 +42,55 @@
 </head>
 <body>
 
-  <h1>🔧 Sistema Experto para Diagnóstico de Fallas en Redes Domésticas</h1>
+  <h1>Sistema Experto para Diagnóstico de Fallas en Redes Domésticas</h1>
 
-  <a href="#introduccion" class="boton">Introducción</a>
-  <a href="#arquitectura" class="boton">Arquitectura</a>
+  <a href="#Objetivo" class="boton">Objetivo</a>
+  <a href="#herramientas" class="boton">Herramientas</a>
   <a href="#casos" class="boton">Casos de Uso</a>
   <a href="#resultados" class="boton">Resultados</a>
   <a href="#contacto" class="boton">Contacto</a>
 
-  <div id="introduccion" class="seccion">
-    <h2>🔍 Introducción</h2>
-    <p>Este sistema experto permite diagnosticar fallas comunes en redes domésticas mediante reglas basadas en síntomas observables.</p>
+
+    <div id="Contactos" class="seccion">   
+    <section style="background-color: rgba(115, 124, 252, 0.671); color: #fff; padding: 20px; border-radius: 10px; max-width: 900px; margin: 5px auto; font-family: Arial, sans-serif;">
+  <p style="font-size: 18px; line-height: 1.6;">
+    <h2 style="font-size: 36px; font-weight: bold; color: white;">Quienes Nosomos</h2>
+       Horacio Bogarin - Cristian Couto - Valeria Villega - Diego Estrada
+  </p>
+   </section>  
   </div>
 
-  <div id="arquitectura" class="seccion">
-    <h2>🧠 Arquitectura</h2>
-    <p>El sistema utiliza una base de hechos, reglas encadenadas y un motor de inferencia para llegar a conclusiones explicables.</p>
+
+
+  <div id="Objetivo" class="seccion">   
+    <section style="background-color: rgba(115, 124, 252, 0.671); color: #fff; padding: 20px; border-radius: 10px; max-width: 900px; margin: 40px auto; font-family: Arial, sans-serif;">
+  <p style="font-size: 18px; line-height: 1.6;">
+    <h2 style="font-size: 36px; font-weight: bold; color: white;">🎯 Objetivos</h2>
+    El sistema experto tiene como propósito principal <strong>diagnosticar problemas de conectividad en redes domésticas</strong>. Para ello, se basa en los siguientes pilares:
+  </p>
+  <ul style="text-align: left; font-size: 18px; line-height: 1.6; margin-top: 15px;">
+    <li><strong>Definición de hechos observables:</strong> identificar síntomas como conexión lenta, ausencia total de internet y desconexiones intermitentes.</li>
+    <li><strong>Creación de reglas de inferencia:</strong> establecer relaciones lógicas que permitan determinar la causa probable de cada problema.</li>
+    <li><strong>Implementación de un endpoint con FastAPI:</strong> ofrecer una interfaz eficiente para realizar pruebas simultáneas en múltiples dispositivos, garantizando rapidez y escalabilidad.</li>
+  </ul>
+  <p style="font-size: 18px; line-height: 1.6; margin-top: 15px;">
+    Este enfoque busca optimizar la detección de fallas y mejorar la experiencia del usuario mediante un sistema automatizado, confiable y fácil de integrar.
+  </p>
+   </section>
   </div>
+
+  
+<div id="herramientas" class="seccion">
+  <section style="background-color: rgba(115, 124, 252, 0.671); color: #fff; padding: 20px; border-radius: 10px; max-width: 900px; margin: 40px auto; font-family: Arial, sans-serif; text-align: center;">
+    
+    <!-- Título -->
+    <h2 style="font-size: 36px; font-weight: bold; color: white;">🧠 Herramientas</h2>
+    
+    <!-- Imagen -->
+    <img src="imagenes/logoherramientas.png" alt="Herramientas" style
+    ="width: 80%; max-width: 600px; height: auto; margin-top: 20px; border-radius: 10px;">
+<section> 
+</div>
 
   <div id="casos" class="seccion">
     <h2>📦 Casos de Uso</h2>
